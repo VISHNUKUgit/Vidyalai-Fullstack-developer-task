@@ -7,18 +7,24 @@ A web application that allows users to upload a PDF file, extract selected pages
 - [Installation](#installation)
 - [Usage](#usage)
 - [API Documentation](#api-documentation)
+- 
 ## Features
-
+- User authentication
 - File upload for PDFs
+- View upoaded PDFs
 - Visual representation of PDF pages
 - Page selection for extraction
+- Rearrange the order of selected pages
 - Download of newly created PDF
+- 
 ## Technologies Used
 
 - React.js for the frontend
 - Node.js with Express for the backend
-- PDF libraries (e.g., pdf-lib) for PDF manipulation
-- Other dependencies...
+- React-PDF for displaing PDF pages
+- pdf-lib for PDF manipulation
+- Multer for uploading files
+- 
 ## Installation
 
 1. Clone the repository:
@@ -26,10 +32,17 @@ A web application that allows users to upload a PDF file, extract selected pages
    ```bash
    git clone https://github.com/your-username/pdf-extractor.git
    cd pdf-extractor
+   
+2. To run Frontend :
+  ```bash
 cd frontend
-npm install
-cd ../backend
-npm install
+npm start
+
+3. To run Backend :
+  ```bash
+      cd ../backend
+      npm index.js
+
 # For the backend, create a .env file with necessary variables
 # Start the frontend
 cd frontend
