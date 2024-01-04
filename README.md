@@ -49,15 +49,15 @@ A web application that allows users to upload a PDF file, extract selected pages
    npm i mongoose
    npm i multer
    npm i pdf-lib
-
-# For the backend, create a .env file with necessary variables
+   
 # Start the frontend
 cd frontend
 npm start
 
 # Start the backend
 cd ../backend
-npm start
+node index.js
+
 6. **Usage:**
    - Explain how users can interact with your application.
 
