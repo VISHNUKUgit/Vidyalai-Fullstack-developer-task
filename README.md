@@ -33,15 +33,22 @@ A web application that allows users to upload a PDF file, extract selected pages
    git clone https://github.com/your-username/pdf-extractor.git
    cd pdf-extractor
    
-2. To run Frontend :
-  ```bash
-cd frontend
-npm start
+   cd frontend
+   npm i sweetalert2
+   npm i react-router-dom
+   npm i react-pdf
+   npm install react-bootstrap bootstrap
+   npm install axios
+   npm install @mui/material @emotion/react @emotion/styled
+   npm i file-saver
 
-3. To run Backend :
-  ```bash
-      cd ../backend
-      npm index.js
+   cd ../backend
+   npm i cors
+   npm i dotenv
+   npm i express
+   npm i mongoose
+   npm i multer
+   npm i pdf-lib
 
 # For the backend, create a .env file with necessary variables
 # Start the frontend
