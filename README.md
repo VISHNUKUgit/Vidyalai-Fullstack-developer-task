@@ -1,5 +1,6 @@
 # Vidyalai-Fullstack-developer-task
 A web application that allows users to upload a PDF file, extract selected pages, and download a new PDF.
+deployed Link: [https://split-pdf-three.vercel.app/](https://split-pdf-three.vercel.app/)
 ## Table of Contents
 
 - [Features](#features)
@@ -8,6 +9,7 @@ A web application that allows users to upload a PDF file, extract selected pages
 - [Usage](#usage)
 - [API Documentation](#api-documentation)
 - 
+
 ## Features
 - User authentication
 - File upload for PDFs
@@ -16,7 +18,7 @@ A web application that allows users to upload a PDF file, extract selected pages
 - Page selection for extraction
 - Rearrange the order of selected pages
 - Download of newly created PDF
-- 
+- Log out from application
 ## Technologies Used
 
 - React.js for the frontend
@@ -63,13 +65,18 @@ A web application that allows users to upload a PDF file, extract selected pages
 ## Usage
 
 1. Open the web application in your browser.
-2. To access the application, start by navigating through the authentication process
-3. Upload a PDF file using the provided form; this action will automatically populate the list with all available PDFs.
-4. Choose the specific PDF file you want to modify from the list of available PDFs
-5. Select the pages you wish to extract from the selected PDF.
+2. To access the application, start by navigating through the authentication process ![Sign Up page](https://github.com/VISHNUKUgit/Vidyalai-Fullstack-developer-task/assets/134578493/eba9f119-8c28-4a91-9cad-ee31e6f6e1fc) ![Mobile signUp page](https://github.com/VISHNUKUgit/Vidyalai-Fullstack-developer-task/assets/134578493/fb17d1eb-26e9-4dc4-83be-01bea67dfa3c)
+
+3. Upload a PDF file using the provided form; this action will automatically populate the list with all available PDFs. ![Home-page](https://github.com/VISHNUKUgit/Vidyalai-Fullstack-developer-task/assets/134578493/ffa77933-412d-4f81-8888-a45e49a33f70) ![mobile Home page](https://github.com/VISHNUKUgit/Vidyalai-Fullstack-developer-task/assets/134578493/68784370-31f1-455d-8cf2-99565c4c7393)
+
+
+4. Choose the specific PDF file you want to modify from the list of available PDFs ![Result-page](https://github.com/VISHNUKUgit/Vidyalai-Fullstack-developer-task/assets/134578493/500382fa-49c3-442b-ab97-aeab64a8d707)
+
+5. Select the pages you wish to extract from the selected PDF. ![mobile editing page](https://github.com/VISHNUKUgit/Vidyalai-Fullstack-developer-task/assets/134578493/30bc6648-7a0d-4d9f-9c62-4cec82d7ade2)
+
 6. Click the 'Generate New PDF' button to create a new PDF.
 7. Download the newly created PDF by clicking the "Download PDF" button.
-8. If you prefer to rearrange pages before downloading, select "Rearrange Pages & Download"
+8. If you prefer to rearrange pages before downloading, select "Rearrange Pages & Download" ![mobile result page](https://github.com/VISHNUKUgit/Vidyalai-Fullstack-developer-task/assets/134578493/21b621b8-fb70-45f2-917d-aa22cd779974)
 
 ## API Documentation
 
