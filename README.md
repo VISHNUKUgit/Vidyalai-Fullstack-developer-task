@@ -30,10 +30,10 @@ A web application that allows users to upload a PDF file, extract selected pages
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/pdf-extractor.git
-   cd pdf-extractor
+   git clone https://github.com/VISHNUKUgit/Vidyalai-Fullstack-developer-task.git
+   cd Split-PDF
    
-   cd frontend
+   cd split-pdf
    npm i sweetalert2
    npm i react-router-dom
    npm i react-pdf
@@ -42,7 +42,7 @@ A web application that allows users to upload a PDF file, extract selected pages
    npm install @mui/material @emotion/react @emotion/styled
    npm i file-saver
 
-   cd ../backend
+   cd ../split-pdf-server
    npm i cors
    npm i dotenv
    npm i express
@@ -50,39 +50,69 @@ A web application that allows users to upload a PDF file, extract selected pages
    npm i multer
    npm i pdf-lib
    
-# Start the frontend
-cd frontend
-npm start
+2. Start the frontend
+   ```bash
+   cd split-pdf
+   npm start
 
-# Start the backend
-cd ../backend
-node index.js
+4. Start the backend
+   ```bash
+   cd ../split-pdf-server
+   node index.js
 
-6. **Usage:**
-   - Explain how users can interact with your application.
-
-```markdown
 ## Usage
 
 1. Open the web application in your browser.
-2. Upload a PDF file using the provided form.
-3. Visualize the PDF pages and select the ones you want to extract.
-4. Click the 'Extract' button to create a new PDF.
-5. Download the newly created PDF.
+2. To access the application, start by navigating through the authentication process
+3. Upload a PDF file using the provided form; this action will automatically populate the list with all available PDFs.
+4. Choose the specific PDF file you want to modify from the list of available PDFs
+5. Select the pages you wish to extract from the selected PDF.
+6. Click the 'Generate New PDF' button to create a new PDF.
+7. Download the newly created PDF by clicking the "Download PDF" button.
+8. If you prefer to rearrange pages before downloading, select "Rearrange Pages & Download"
+
 ## API Documentation
 
-### POST /api/upload
-- Description: Upload a PDF file.
-- Request body: FormData with PDF file.
-- Response: Status 200 if successful.
+### POST /user/register
+- Description: Register a user account.
+- Request body: Include user data (username, email, password).
+- Response: 
+      -successful : Return a status 200 (OK) and the newly created user details.
+      -error      : return a status 401 (Unauthorized) with the error message
+                  : If a user with the email already exists, return a status 406 (Not Acceptable)
+### POST /user/login
+- Description: Authenticate a user.
+- Request body: Include user data (email, password).
+- Response: 
+      -successful : Return a status 200 (OK) with the user details
+      -error      : If no matching user is found, return a status 404 (Not Found) with an error message
+                  : If an error occurs during the login process, return a status 401 (Unauthorized) with the error message
 
-### GET /api/pdf/:id
-- Description: Retrieve a stored PDF.
-- Parameters: PDF ID.
-- Response: PDF file.
-
-### POST /api/extract
+### POST /upload
 - Description: Extract selected pages and create a new PDF.
-- Request body: JSON with selected page numbers.
-- Response: Newly created PDF file.
+- Request body:  Include uploderId:_id,title for the file,files:filename.
+- Response: 
+      -successful : Return a status 200 (OK) with the added file information
+      -error      : return a status 401 (Unauthorized) with the error message
+
+### POST /get_pdf
+- Description: Retrieve a stored PDF.
+- Request body:  Include uploderId:userId .
+- Response: 
+      -successful : Return a status 200 (OK) with the list of files
+      -error      : return a status 401 (Unauthorized) with the error message
+
+### POST /create-new-pdf
+- Description: Extract selected pages and create a new PDF.
+- Request body: Include fileName:files && pageNumber.
+- Response: 
+      -successful : Return a status 200 (OK) wuth the modified file name as a response
+      -error      :  Return a status 500 (Internal Server Error) with the error message
+
+### POST /rearrange-download-pdf
+- Description: create a new PDF with rearranged pages  .
+- Request body: fileName:modified file name && pageNumber.
+- Response: 
+      -successful : Return a status 200 (OK) wuth the modified file name as a response
+      -error      : Return a status 500 (Internal Server Error) with the error message
   
