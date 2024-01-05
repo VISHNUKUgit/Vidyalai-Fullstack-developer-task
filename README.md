@@ -1,6 +1,10 @@
 # Vidyalai-Fullstack-developer-task
 A web application that allows users to upload a PDF file, extract selected pages, and download a new PDF.
-deployed Link: [https://split-pdf-three.vercel.app/](https://split-pdf-three.vercel.app/)
+
+* deployed Link: [https://split-pdf-three.vercel.app/](https://split-pdf-three.vercel.app/)
+* Frontend git repostorie :[https://github.com/VISHNUKUgit/Split-PDF.git](https://github.com/VISHNUKUgit/Split-PDF.git)
+* Backend git repostorie :[https://github.com/VISHNUKUgit/Split-PDF-Server.git](https://github.com/VISHNUKUgit/Split-PDF-Server.git)
+
 ## Table of Contents
 
 - [Features](#features)
