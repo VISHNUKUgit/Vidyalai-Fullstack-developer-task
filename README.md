@@ -36,10 +36,8 @@ A web application that allows users to upload a PDF file, extract selected pages
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/VISHNUKUgit/Vidyalai-Fullstack-developer-task.git
+   git clone https://github.com/VISHNUKUgit/Split-PDF.git
    cd Split-PDF
-   
-   cd split-pdf
    npm i sweetalert2
    npm i react-router-dom
    npm i react-pdf
@@ -48,7 +46,8 @@ A web application that allows users to upload a PDF file, extract selected pages
    npm install @mui/material @emotion/react @emotion/styled
    npm i file-saver
 
-   cd ../split-pdf-server
+   git clone https://github.com/VISHNUKUgit/Split-PDF-Server.git
+   cd Split-Pdf-Server
    npm i cors
    npm i dotenv
    npm i express
